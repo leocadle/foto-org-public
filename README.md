@@ -19,12 +19,6 @@ An application for scanning, de-duplicating, and organising your photo library.
 - .NET 8
 - Visual Studio 2022 with WinUI workload installed
 
-## Getting Started
-1. Clone the repo
-   git clone https://github.com/leocadle/foto-org.git
-2. Open `FotoOrg.sln` in Visual Studio 2022
-3. Build and run (F5)
-
 ## Roadmap
 - [ ] Organise photos by date
 - [ ] Preview duplicates before deleting

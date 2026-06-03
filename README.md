@@ -9,7 +9,7 @@ An application for scanning, de-duplicating, and organising your photo library.
 - (More coming soon)
 
 ## Download
-[⬇️ Download Latest Release]([https://github.com/leocadle/foto-org-public/releases/latest])
+[⬇️ Download Latest Release](https://github.com/leocadle/foto-org-public/releases/latest)
 
 ### Installation
 1. Download and unzip the release package

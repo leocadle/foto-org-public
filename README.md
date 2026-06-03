@@ -5,10 +5,11 @@ An application for scanning, de-duplicating, and organising your photo library.
 ## Features
 - Scan a folder and all subfolders for photos
 - Detect duplicate images
+- Delete duplicate images
 - (More coming soon)
 
 ## Download
-[⬇️ Download Latest Release](https://github.com/leocadle/foto-org/releases/latest)
+[⬇️ Download Latest Release]([https://github.com/leocadle/foto-org-public/releases/latest])
 
 ### Installation
 1. Download and unzip the release package

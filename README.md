@@ -21,9 +21,15 @@ An application for scanning, de-duplicating, and organising your photo library.
 - Visual Studio 2022 with WinUI workload installed
 
 ## Roadmap
-- [ ] Organise photos by date
-- [ ] Preview duplicates before deleting
-- [ ] Export report of duplicates found
+- [X] Scan for duplicate photos
+- [X] Show groups of duplicates
+- [X] Identify best photo of duplicates
+- [ ] Identify low information photos
+- [ ] Identify out of focus photos
+- [X] Allow deletion of duplicates and other photos
+- [X] Allow duplicates and bad photos to be removed from duplicates/bad photos groups
+- [X] Add settings to control various factors around files and scanning
+- [X] Copy non duplicates to a new folder with a date hierarchy
 
 ## License
 MIT

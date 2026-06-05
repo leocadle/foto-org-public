@@ -3,12 +3,13 @@
 An application for scanning, de-duplicating, and organising your photo library.
 
 ## Features
-- Scan a folder and all subfolders for photos
-- Detect duplicate images and place in groups
-- Identify best of duplicates
-- Allow deletion of duplicate images
-- Allow removal of duplicates from groups
-- Copy non duplicates to a new folder system with a date hierarchy
+- Scan a folder and all subfolders for photos and duplicates
+- Place duplicate images in groups of similarity
+- Identify best quality or most original photo of duplicates
+- Delete duplicate images if necessary
+- Remove duplicates from duplicate groups (photo is then considered unique)
+- Remove duplicate groups (photos from group are then all considered unique)
+- Copy non duplicates to one of three different folder systems, single folder, numerical only date, human readable date
 
 ## Download
 [⬇️ Download Latest Release](https://github.com/leocadle/foto-org-public/releases/latest)

@@ -5,10 +5,13 @@ An application for scanning, de-duplicating, and organising your photo library.
 ## Features
 - Scan a folder and all subfolders for photos and duplicates
 - Place duplicate images in groups of similarity
+- Mark low detail photos
 - Identify best quality or most original photo of duplicates
-- Delete duplicate images if necessary
-- Remove duplicates from duplicate groups (photo is then considered unique)
+- User can remove duplicate images from the duplicate group (photo is then considered unique)
 - Remove duplicate groups (photos from group are then all considered unique)
+- User can remove Low Detail mark from photos
+- User can delete all selected or individual photos
+- User can set scan accuracy and other settings
 - Copy non duplicates to one of three different folder systems, single folder, numerical only date, human readable date
 
 ## Download

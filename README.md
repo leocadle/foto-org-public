@@ -28,6 +28,7 @@ An application for scanning, de-duplicating, and organising your photo library.
 - [X] Allow duplicates and bad photos to be removed from duplicates/bad photos groups
 - [X] Add settings to control various factors around files and scanning
 - [X] Copy non duplicates to a new folder with a date hierarchy
+- [ ] Scan the destination folder as well and 'add' photos to the organised photos without duplicates or bad photos
 
 ## License
 MIT

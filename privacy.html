@@ -8,109 +8,192 @@
         :root {
             color-scheme: dark;
         }
+        * { box-sizing: border-box; }
         body {
             margin: 0;
             padding: 0;
-            background: #2D2D2D;
+            background:
+                radial-gradient(1200px 600px at 50% -10%, #343434 0%, #2A2A2A 55%, #252525 100%);
             color: #E8E8E8;
             font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
         }
         .wrap {
-            max-width: 760px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 48px 24px 80px;
+            padding: 56px 24px 96px;
         }
-        h1 {
-            font-size: 28px;
-            font-weight: 600;
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #3D3D3D;
+            margin-bottom: 8px;
+        }
+        .badge {
+            flex: 0 0 auto;
+            width: 72px;
+            height: 72px;
+            border-radius: 18px;
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+        }
+        .badge img {
+            width: 54px;
+            height: 54px;
+            display: block;
+        }
+        .titles h1 {
+            font-size: 30px;
+            font-weight: 650;
             margin: 0 0 4px;
             color: #FFFFFF;
+            letter-spacing: -0.4px;
         }
-        .updated {
-            color: #9A9A9A;
+        .titles .sub {
             font-size: 14px;
-            margin-bottom: 32px;
+            color: #9A9A9A;
+            margin: 0;
         }
-        h2 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #FFFFFF;
-            margin: 32px 0 8px;
-        }
-        p {
-            margin: 0 0 14px;
-            color: #CCCCCC;
-        }
-        a {
-            color: #4FA3E3;
-        }
-        .lead {
-            color: #E8E8E8;
-            font-size: 17px;
-        }
-        footer {
-            margin-top: 48px;
-            padding-top: 20px;
-            border-top: 1px solid #444;
+
+        .updated {
             color: #8A8A8A;
             font-size: 13px;
+            margin: 20px 0 40px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+        }
+
+        .lead {
+            color: #F0F0F0;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 0 8px;
+        }
+
+        h2 {
+            font-size: 15px;
+            font-weight: 650;
+            color: #FFFFFF;
+            margin: 40px 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+        h2 .dot {
+            color: #4FA3E3;
+            margin-right: 8px;
+        }
+
+        p {
+            margin: 0 0 14px;
+            color: #C8C8C8;
+            font-size: 15.5px;
+        }
+
+        .highlight {
+            background: #303B44;
+            border-left: 3px solid #4FA3E3;
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin: 8px 0 4px;
+        }
+        .highlight p { margin: 0; color: #DCE6EC; }
+        .highlight strong { color: #FFFFFF; }
+
+        a { color: #6BB6EC; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        footer {
+            margin-top: 56px;
+            padding-top: 22px;
+            border-top: 1px solid #3D3D3D;
+            color: #7A7A7A;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        footer img {
+            width: 20px; height: 20px; opacity: 0.6;
         }
     </style>
 </head>
 <body>
     <div class="wrap">
-        <h1>foto-org Privacy Policy</h1>
-        <div class="updated">Last updated: 27 June 2026</div>
+
+        <div class="header">
+            <div class="badge">
+                <img src="foto-org_logo.png" alt="foto-org logo">
+            </div>
+            <div class="titles">
+                <h1>Privacy Policy</h1>
+                <p class="sub">foto-org — photo organiser &amp; de-duplicator</p>
+            </div>
+        </div>
+
+        <div class="updated">Last updated: 1 July 2026</div>
 
         <p class="lead">
-            foto-org is a desktop application that scans, de-duplicates,
-            and organises photos stored on your own device.
+            foto-org runs entirely on your own device. It never sends your
+            photos or any personal information anywhere.
         </p>
 
-        <h2>Data collection</h2>
+        <h2><span class="dot">&#9679;</span>Data collection</h2>
         <p>
             foto-org does not collect, transmit, or share any personal
-            information. The application has no networking functionality
-            and does not send any data off your device to us or to any
-            third party.
+            information. The application has no networking functionality and
+            does not send any data off your device to us or to any third party.
         </p>
 
-        <h2>Data processed locally</h2>
+        <h2><span class="dot">&#9679;</span>Data processed locally</h2>
         <p>
             To do its work, foto-org reads image files and their embedded
             metadata (such as EXIF camera details and, where present, GPS
-            location) from folders you select. It stores thumbnails and
-            file information in a local database on your own computer so
-            results can be displayed and reloaded. All of this data
-            remains on your device at all times and is never uploaded or
-            transmitted.
+            location) from folders you select. It stores thumbnails and file
+            information in a local database on your own computer so results can
+            be displayed and reloaded. All of this data remains on your device
+            at all times and is never uploaded or transmitted.
         </p>
 
-        <h2>File operations</h2>
+        <h2><span class="dot">&#9679;</span>File operations</h2>
+        <div class="highlight">
+            <p>
+                <strong>foto-org never deletes or changes your original
+                photos.</strong> When you organise photos into an archive, it
+                only ever <em>copies</em> them into a destination folder you
+                choose. Your source files are always left exactly as they were.
+            </p>
+        </div>
         <p>
-            foto-org copies files only on your own device, only into the
-            destination folder you choose, and only when you start the
-            copy yourself. It does not move, modify, or delete your
-            original photos — your source files are always left untouched.
+            All file operations happen only on your own device, only in the
+            folders you choose, and only when you start them yourself. When
+            adding to an existing archive, photos already present are skipped so
+            that only new photos are copied.
         </p>
 
-        <h2>Data retention</h2>
+        <h2><span class="dot">&#9679;</span>Data retention</h2>
         <p>
-            All data created by foto-org (thumbnails, metadata, and
-            settings) is stored locally and can be removed at any time
-            using the application's Reset function or by uninstalling
-            the app.
+            All data created by foto-org (thumbnails, metadata, and settings) is
+            stored locally and can be removed at any time using the
+            application's Reset function or by uninstalling the app.
         </p>
 
-        <h2>Contact</h2>
+        <h2><span class="dot">&#9679;</span>Contact</h2>
         <p>
-            For questions about this policy, please use the support
-            contact listed on the foto-org page in the Microsoft Store.
+            For questions about this policy, please use the support contact
+            listed on the foto-org page in the Microsoft Store.
         </p>
 
         <footer>
-            foto-org — a photo scanner, de-duplicator and organiser.
+            <img src="foto-org_logo.png" alt="">
+            foto-org — scan, de-duplicate and organise your photos, privately.
         </footer>
     </div>
 </body>

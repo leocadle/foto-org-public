@@ -1,29 +1,47 @@
-# Foto-Org
+# foto-org
 
-An application for scanning, de-duplicating, and organising your photo library.
+A Windows application for scanning, de-duplicating, and organising your
+photo library into a clean, date-ordered archive — without ever changing
+or deleting your original photos.
 
 ## Features
-- Scan a folder and all subfolders for photos and duplicates
-- Place duplicate images in groups of similarity
-- Mark low detail photos
-- Identify best quality or most original photo of duplicates
-- User can remove duplicate images from the duplicate group (photo is then considered unique)
-- Remove duplicate groups (photos from group are then all considered unique)
-- User can remove Low Detail mark from photos
-- User can delete all selected or individual photos
-- User can set scan accuracy and other settings
-- Copy non duplicates to one of three different folder systems, single folder, numerical only date, human readable date
+
+- Scan a folder (and optionally all subfolders) for photos, exact
+  duplicates, and visually similar images
+- Group duplicate and near-identical photos together using exact and
+  perceptual matching
+- Automatically identify the best-quality or most original photo in each
+  duplicate group
+- Flag low-detail, blurry, poorly exposed, tilted, and document photos
+  for review
+- Choose exactly which photos to keep in each group (multiple keepers
+  allowed) — nothing is ever deleted, only included or excluded from the copy
+- Remove individual photos, or an entire group, from a duplicate group
+  (they are then treated as unique)
+- Clear the low-detail flag on photos to keep them
+- Build an organised **archive**: copy the photos you keep into one of
+  three folder structures — single folder, numerical date (2024\01\15),
+  or readable date (2024\01 - January\15)
+- Add to an existing archive incrementally: the destination's structure
+  is detected automatically, and photos already present are skipped so
+  only new photos are copied
+- Adjustable scan accuracy and detection settings
+- Runs entirely offline — no photo or personal data ever leaves your device
 
 ## Roadmap
-- [X] Scan for duplicate photos
-- [X] Show groups of duplicates
-- [X] Identify best photo of duplicates
-- [X] Identify low information photos
-- [X] Identify out of focus photos
-- [X] Allow duplicates and bad photos to be removed from duplicates/bad photos groups
-- [X] Add settings to control various factors around files and scanning
-- [X] Copy non duplicates to a new folder with a date hierarchy
-- [ ] Scan the destination folder as well and 'add' photos to the organised photos without duplicates or bad photos
+
+- [x] Scan for duplicate photos
+- [x] Show groups of duplicates
+- [x] Identify the best photo of duplicates
+- [x] Identify low-information photos
+- [x] Identify out-of-focus photos
+- [x] Allow photos to be removed from duplicate / flagged groups
+- [x] Settings to control scanning and file-handling behaviour
+- [x] Copy kept photos into a new folder with a date hierarchy
+- [x] Detect an existing archive's structure and add only new photos to it
+- [ ] Optional content-based (hash) matching when adding to an archive
+- [ ] Support additional archive folder structures
 
 ## License
+
 MIT

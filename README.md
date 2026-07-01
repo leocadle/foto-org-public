@@ -14,11 +14,6 @@ An application for scanning, de-duplicating, and organising your photo library.
 - User can set scan accuracy and other settings
 - Copy non duplicates to one of three different folder systems, single folder, numerical only date, human readable date
 
-## Requirements
-- Windows 10 or 11
-- .NET 8
-- Visual Studio 2022 with WinUI workload installed
-
 ## Roadmap
 - [X] Scan for duplicate photos
 - [X] Show groups of duplicates
